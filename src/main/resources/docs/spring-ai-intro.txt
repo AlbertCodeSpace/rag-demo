@@ -1,0 +1,19 @@
+Spring AI 是 Spring 生态中的 AI 应用开发框架，它为 Java 开发者提供了一套统一的 API 来集成各种 AI 模型和服务。
+
+Spring AI 的核心功能包括：
+
+1. 统一的 Chat API：支持 OpenAI、Ollama、Anthropic 等多种模型供应商，切换模型只需改配置，代码无需修改。
+
+2. Embedding 支持：将文本转换为高维向量表示，是构建 RAG 系统的基础。Spring AI 支持多种 Embedding 模型，包括本地运行的 Ollama 模型。
+
+3. 向量存储抽象：提供统一的 VectorStore 接口，支持 SimpleVectorStore、PGVector、Chroma、Milvus 等多种向量数据库实现，方便开发和生产环境的切换。
+
+4. RAG 支持：内置 QuestionAnswerAdvisor，可以快速搭建检索增强生成管道，将外部知识注入到 LLM 对话中。
+
+5. 文档 ETL 管道：提供 DocumentReader、DocumentTransformer、DocumentWriter 三层抽象，支持 PDF、Markdown、HTML 等多种文档格式的读取和处理。
+
+6. 函数调用（Function Calling）：让 LLM 能够调用 Java 方法，实现与外部系统的交互，比如查询数据库、调用 REST API 等。
+
+7. 结构化输出：支持将 LLM 的自然语言输出转换为 Java 对象，方便后续程序处理。
+
+Spring AI 遵循 Spring 的一贯风格：约定优于配置，自动装配，声明式编程。如果你熟悉 Spring Boot，上手 Spring AI 几乎没有额外的学习成本。

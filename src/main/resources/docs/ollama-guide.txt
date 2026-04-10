@@ -1,0 +1,15 @@
+Ollama 是一个本地运行大语言模型的工具，让你无需云端 API 就能在自己的电脑上使用 LLM。
+
+Ollama 的主要特点：
+
+1. 简单易用：一条命令即可下载并运行模型。例如 ollama run llama3 就能启动 Meta 的 LLaMA 3 模型进行对话。
+
+2. 模型丰富：支持 LLaMA 3、Mistral、Gemma、Qwen 等主流开源模型，以及 qwen3-embedding、nomic-embed-text 等 Embedding 模型。
+
+3. API 兼容：提供 REST API 接口，兼容 OpenAI API 格式，方便集成到各种应用中。默认运行在 http://localhost:11434。
+
+4. 资源管理：根据模型大小自动分配 CPU 或 GPU 资源。支持 Apple Silicon 的 Metal 加速和 NVIDIA CUDA 加速。
+
+5. 模型自定义：通过 Modelfile 可以自定义模型参数、系统提示词等。
+
+在 Spring AI 中使用 Ollama 非常简单，只需要在配置文件中指定模型名称和服务地址即可。Spring AI 的 Ollama 集成支持 Chat 和 Embedding 两种模型类型。

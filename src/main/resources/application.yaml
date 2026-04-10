@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: rag-demo
+
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      init:
+        pull-model-strategy: when_missing
+      chat:
+        model: qwen3.5:9b
+      embedding:
+        model: qwen3-embedding:8b
+    vectorstore:
+      qdrant:
+        host: localhost
+        port: 6334
+        collection-name: rag_demo
+        initialize-schema: true
+
+server:
+  port: 8080
