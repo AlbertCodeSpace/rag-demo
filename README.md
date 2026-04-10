@@ -4,6 +4,8 @@
 
 提供按 namespace 隔离的知识库管理、多格式文档摄入、查询重写、向量检索、同步 / 流式问答与来源引用，覆盖一个最小但可用的 RAG 端到端链路。
 
+> 配套教程：[Spring AI RAG 实战教程](https://albertstack.com/tutorials/spring-ai-rag)
+
 ## 功能特性
 
 - **多知识库隔离**：以 URL path 上的 `namespace` 作为顶层资源段，所有摄入和检索都按 namespace 过滤，互不干扰。
